@@ -6,6 +6,6 @@
 ## Natural Language Processing
 1. [8 NLP Tutorials for beginners](https://www.analyticsindiamag.com/8-free-resources-for-beginners-to-learn-natural-language-processing/)
 2. [NLP Beginner to Advanced Road Map](https://trello.com/b/lYQwQojM)
-
+3. [Pretrained NLP Libraries](https://github.com/huggingface/pytorch-transformers)
 ## Articles
 1. 
