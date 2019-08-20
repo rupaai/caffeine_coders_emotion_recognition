@@ -36,8 +36,8 @@ WASSA-2017 Shared Task on Emotion Intensity. Saif M. Mohammad and Felipe Bravo-M
 ### Notebooks:
 
   1. downloadTweets.ipynb: This notebook helps us to download the tweets with specific keywords like, "#udacity", "#pytorch", "facebookai", "#facebook" using Twitter's Streaming API. We can feed in our model the real time tweets using this API.
+  
   2 emotion_ecognition_with_federated_learning.ipynb: In this notebook, we have tried to apply course content(Federated Learning) to our model. But with failed attempts only, since RNNs and LSTM/GRU are not supported by Syft yet.
-  3
 
 ## Data Cleaning
 When we tweet or chat, we tend to be using various characters which are not part of English alphabets. However, in Natural Language Processing, it is really hard for the model to learn from data when it contains so many versatile characters and doesn't produce a good accuracy on that. So, to improve our accuracy we cleaned the data in the following process:
@@ -99,4 +99,10 @@ Currently, the application will scrape Twitter data and analyze it.
   5. [Modified GRU - Federated Learning](https://github.com/andrelmfarias/Private-AI/blob/master/Federated_Learning/handcrafted_GRU.py)
   
   6. [Our query on Openmined slack about the federated learning issue](https://openmined.slack.com/archives/C6EEFN3A8/p1566138140348300)
+  
+  7. [Understanding RNN, LSTM & GRU](https://colah.github.io/posts/2015-08-Understanding-LSTMs/)
+  
+  8. [Pre-processing for NLP](https://medium.com/@makcedward/nlp-pipeline-word-tokenization-part-1-4b2b547e6a3)
+  
+  9. [Analysing Twitter Data](https://towardsdatascience.com/visualization-of-information-from-raw-twitter-data-part-1-99181ad19c)
   
