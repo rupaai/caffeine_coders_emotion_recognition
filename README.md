@@ -42,12 +42,14 @@ When we tweet or chat, we tend to be using various characters which are not part
 For further clarity, we shared our Data Cleaning Code(https://github.com/rupaai/caffeine_coders_emotion_detection/blob/master/Training_Dataset_Cleaning.ipynb) here.
 
 ## Data Preprocessing
-In the preprocessing part the tweets are split into smaller pieces, or tokens. The process itself is called tokenization.
-A dictionairy is created to map words to index and then create the input tensors for the neural network.
+
+In Natural Language Processing, we can't directly feed the data as input to a model like we can do for any computer vision model. To turn the words into learnable input data, we used the following data preprocessing steps:
+1. At first the tweets are split into words which are called tokens here, this process is known as *Tokenization*.
+2. Later, we we used nltk word2vec model to convert the words into vector dictionary which is turned into a tensor as the input of the model.
 
 
-## Machine Learning Model
-
+## Model Structure
+For model, we used a *Gated Recurrent Unit(GRU)* model which is a *6-Layer* neural network where first 2 layers are used as reset gate, next 2 layers are used as update gates and the last 2layers are used as new gates.
 
 ## Federated Learning
 
