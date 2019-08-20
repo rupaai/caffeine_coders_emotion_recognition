@@ -43,16 +43,27 @@ For further clarity, we shared our Data Cleaning Code(https://github.com/rupaai/
 
 ## Data Preprocessing
 
-In Natural Language Processing, we can't directly feed the data as input to a model like we can do for any computer vision model. To turn the words into learnable input data, we used the following data preprocessing steps:
-1. At first the tweets are split into words which are called tokens here, this process is known as *Tokenization*.
-2. Later, we we used nltk word2vec model to convert the words into vector dictionary which is turned into a tensor as the input of the model.
+  1. Since computers understand just numbers or to be more precise just binary, so we can't just feed in our algorithms dirctly the text and expect them to give us the desired output.
+  2. Just like in case of Images, we represent the pixel values in a range of 0 to 255 to represent the colour intensity and use it to feed as raw data to feed our model, in case of text we need to convert them into numbers/tensors.
+  3. To achieve this, first we are making a corporus/Dictionary out of all the tweets we have received in our dataset.
+  4. Then we are using word to index and index to word mappings to map words to index and index to words respectively.
+  5. We are using tokenization to represent a sentence and then those tokens(words) are mapped to their respective indices.
+  6. And in the final step we are using Word Embeddings as our final input to the model. 
+  7. Each word in the corporus is represent using a word vector of specfic dimensions.
+  8. Representing words in forms of tensors help us find the similarity and dissimilarity between two words, since the ones having similar meaning lie close to each other and the ones having different meanings lie very far away from each other.
 
-
-## Model Structure
-For model, we used a *Gated Recurrent Unit(GRU)* model which is a *6-Layer* neural network where first 2 layers are used as reset gate, next 2 layers are used as update gates and the last 2layers are used as new gates.
+## Model Archtecture
+  1. When we deal with text/tweets we know that there is some context related to it. Because one word can have different meanings so it becomes very important for us to remember the context of our sentence.
+  2. Recurrent Neural Networks helps us get over this problem by taking into account the previous context for a current input point.
+  3. But when the length of our sentences tend to be longer, RNNs start suffering from a problem of Dimining Gradients which affects the performance in a very adverse way.
+  4. To overcome this limitation, we are using GRU, a Gated Recurrent Unit which helps us in remembering only that context information which is important. 
+  5. We are using a Single-layer GRU as our model for our Showcase Project.
 
 ## Federated Learning
-
+  1. We were very excited about applying the course contents to our Showcase Project and no wonder Federated Learning was our the most favorite part of the course so after getting a very good 93% Accuracy on our model we started working towards it.
+  2. We spent a good amount of time to execute it but errors were not ready to leave our code, we tried searching on Google and StackOverflow, we even took help of our fellow scholars but we were still not able to get over them.
+  3. We then asked our question in Openmind's Slack Coomunity and got to know that Syft does not supports RNN and LSTM as of now and the teams are still working on it. [Link](https://openmined.slack.com/archives/C6EEFN3A8/p1566138140348300)
+  4. Well that news stuck us very hard but after discussing this issue with Palak in one of the #ama_sessions we decided that we will mention about our hard work and here we are sharing it with you. We hope that soon we will be able to apply Federated Learning to RNNs also.
 
 ## Deployment
 The deployment should be done with FLASK. It will load a screen where it is possible to enter a message. After submitting, the message will be analyzed.
@@ -61,10 +72,25 @@ For now the Machine Learning Model is not implmented in the deployment code, It 
 
 Currently, the application will scrape Twitter data and analyze it. 
 
+## Proposed Use Cases
+  1. After training our model for Emotion Recognition we wanted to use it for real time Emotion Detection.
+  2. We had tried of scraping all the tweets using Twitter's Streaming API to download all the live tweets mentioning the keywords, "#udacity", "#pyTorch#, '#facebookai" , "#facebook".
+  3. After fetchng the real time tweets we can apply our model to the tweets which can identify user's emotions from text about Udacity.
+  4. For example, we can analyse student's emotions related to the Deep Learning Nanodegree over time and plot it.
+  5. We can also use it for some other topics like recently Facebook decided to launch its own Cryptocurrency so we can fetch all the tweets with keywords, "#Libra", "#fbCrypto", "#facebookCrypto" and then analyse in real time how people are reacting to this news using our emotion recognition model.
+  6. Emotion Recognition model has one more application to it's name where we can use it to classify the emotions of the Feedbacks that are coming on Udacity's website. We can classify the feedbacks into "Happy Customer", "Angry Customer", "Sad Customer". This way it can help Udacity in understanding user emotions in a better way Since understanding Customer Emotion are very importand aspect for any firm/organisation.
+  7. We also wanted to create a UI where a person can put some text and submit it and our model will tell about the emotion of the text.
+
 ## Code Reference 
-1.[Raw Dataset Emotion Detection Tweets](http://saifmohammad.com/WebPages/EmotionIntensity-SharedTask.html)
-2.[Facebook Color Set](https://encycolorpedia.de/3b5998)
-3.[Cleaning Data](https://towardsdatascience.com/another-twitter-sentiment-analysis-bb5b01ebad90)
-4. [Udacity Facebook Secure and Private AI Scholarship Challenge Course](https://www.udacity.com/facebook-AI-scholarship)
-5. [Modified GRU - Federated Learning](https://github.com/andrelmfarias/Private-AI/blob/master/Federated_Learning/handcrafted_GRU.py)
-6. [Our query on Openmined slack about the federated learning issue](https://openmined.slack.com/archives/C6EEFN3A8/p1566138140348300)
+  1. [Raw Dataset Emotion Detection Tweets](http://saifmohammad.com/WebPages/EmotionIntensity-SharedTask.html)
+  
+  2. [Facebook Color Set](https://encycolorpedia.de/3b5998)
+  
+  3. [Cleaning Data](https://towardsdatascience.com/another-twitter-sentiment-analysis-bb5b01ebad90)
+  
+  4. [Udacity Facebook Secure and Private AI Scholarship Challenge Course](https://www.udacity.com/facebook-AI-scholarship)
+  
+  5. [Modified GRU - Federated Learning](https://github.com/andrelmfarias/Private-AI/blob/master/Federated_Learning/handcrafted_GRU.py)
+  
+  6. [Our query on Openmined slack about the federated learning issue](https://openmined.slack.com/archives/C6EEFN3A8/p1566138140348300)
+  
