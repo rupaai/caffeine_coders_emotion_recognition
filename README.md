@@ -37,7 +37,15 @@ WASSA-2017 Shared Task on Emotion Intensity. Saif M. Mohammad and Felipe Bravo-M
 
   1. downloadTweets.ipynb: This notebook helps us to download the tweets with specific keywords like, "#udacity", "#pytorch", "facebookai", "#facebook" using Twitter's Streaming API. We can feed in our model the real time tweets using this API.
   
-  2 emotion_ecognition_with_federated_learning.ipynb: In this notebook, we have tried to apply course content(Federated Learning) to our model. But with failed attempts only, since RNNs and LSTM/GRU are not supported by Syft yet.
+  2. emotion_ecognition_with_federated_learning.ipynb: In this notebook, we have tried to apply course content(Federated Learning) to our model. But with failed attempts only, since RNNs and LSTM/GRU are not supported by Syft yet.
+  
+  3. NLPproject_emotion_recognition.ipynb: Our main notebook in which we have used the dataset for training and testing of model.
+  
+  4. emotion_recognition.ipynb: Trained our model on another dataset with 6 emotion labels, with two new emotions 'love' and 'surprise', this dataset was very unbalanced so we are not taking it for our main model's training.
+  
+  5. Training_Dataset_Cleaning.ipynb: 
+  
+  6. Testing_Dataset_Cleaning.ipynb: 
 
 ## Data Cleaning
 When we tweet or chat, we tend to be using various characters which are not part of English alphabets. However, in Natural Language Processing, it is really hard for the model to learn from data when it contains so many versatile characters and doesn't produce a good accuracy on that. So, to improve our accuracy we cleaned the data in the following process:
