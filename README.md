@@ -79,7 +79,10 @@ For further clarity, we shared our [Data Cleaning Code](https://github.com/rupaa
   4. The news stuck us very hard but after discussing this issue with Palak in one of the #ama_sessions we decided that we will mention about our hard work and here we are sharing it with you. We hope that soon we will be able to apply Federated Learning to RNNs also.
 
 ## Deployment
-The deployment should be done with FLASK. It will load a screen where it is possible to enter a message. After submitting, the message will be analyzed. When finished analyzing, it will show the results screen, saying the percentage of each emotion the message is carrying. For now, the Machine Learning Model is not implemented in the deployment code, it will only show the screens.
+
+The deployment is done with FLASK. It loads a screen where it is possible to enter a message. However, we couldn't finish the whole deployment part due to time-restriction. Our future plan is to deploy the model completely after submitting a message on the screen, it will be analyzed. When finished analyzing, it will show the results screen, saying the percentage of each emotion the message is carrying. For now, the Machine Learning Model is not implemented in the deployment code, it will only show the screens like below:
+
+![Alt_Text](https://github.com/rupaai/caffeine_coders_emotion_recognition/blob/master/Image.jpg "FLASK Screen")
 
 Currently, the application will scrape Twitter data and analyze it.
 
