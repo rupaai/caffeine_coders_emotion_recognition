@@ -35,7 +35,9 @@ WASSA-2017 Shared Task on Emotion Intensity. Saif M. Mohammad and Felipe Bravo-M
 
 ### Notebooks:
 
-  1. 
+  1. downloadTweets.ipynb: This notebook helps us to download the tweets with specific keywords like, "#udacity", "#pytorch", "facebookai", "#facebook" using Twitter's Streaming API. We can feed in our model the real time tweets using this API.
+  2 emotion_ecognition_with_federated_learning.ipynb: In this notebook, we have tried to apply course content(Federated Learning) to our model. But with failed attempts only, since RNNs and LSTM/GRU are not supported by Syft yet.
+  3
 
 ## Data Cleaning
 When we tweet or chat, we tend to be using various characters which are not part of English alphabets. However, in Natural Language Processing, it is really hard for the model to learn from data when it contains so many versatile characters and doesn't produce a good accuracy on that. So, to improve our accuracy we cleaned the data in the following process:
