@@ -23,8 +23,9 @@ by Udacity and to the study group #sg_caffeine_coders project challenge. --->
 We used 
 [EmotionIntensity Dataset](http://saifmohammad.com/WebPages/EmotionIntensity-SharedTask.html) for our project where the data is collected from twitter.
 
-An interactive visualization of the Tweet Emotion Intensity Dataset is here:
-[Interactive Dataset](http://saifmohammad.com/WebPages/TweetEmotionIntensity-dataviz.html)
+An interactive visualization of the Tweet Emotion Intensity Dataset is shown below whic is taken from [TweetEmotionIntensity-dataviz](http://saifmohammad.com/WebPages/TweetEmotionIntensity-dataviz.html):
+
+![Alt_Text](https://github.com/rupaai/caffeine_coders_emotion_recognition/blob/master/Emotion_Intensity_Dashboard.png "TweetEmotionIntensity-dataviz"):
 
 The dataset provides a trainings set, a development set, and a test set and on each set it contains the information of a user's tweet, its emotion and the intensity. Four different emotions were marked for the emotion data which are *Happy, fear, joy and, sadness*.
 
@@ -95,7 +96,17 @@ Currently, the application will scrape Twitter data and analyze it.
   6. Emotion Recognition model has one more application to it's name where we can use it to classify the emotions of the Feedbacks that are coming on Udacity's website. We can classify the feedbacks into "Happy Customer", "Angry Customer", "Sad Customer". This way it can help Udacity in understanding user emotions in a better way Since understanding Customer Emotion are very importand aspect for any firm/organisation.
   7. We also wanted to create a UI where a person can put some text and submit it and our model will tell about the emotion of the text.
 
-## Code Reference 
+
+## Contributors 
+
+ Slack Handle | Contributor
+------------ | -------------
+ @Sabrina | Sabrina 
+  @Sumanyu Rosha | Sumanyu Rosha
+  @sourav kumar | sourav kumar
+  @Labiba | Labiba Kanij Rupty
+  
+## References 
   1. [Raw Dataset Emotion Detection Tweets](http://saifmohammad.com/WebPages/EmotionIntensity-SharedTask.html)
   
   2. [Facebook Color Set](https://encycolorpedia.de/3b5998)
