@@ -61,4 +61,5 @@ Currently, the application will scrape Twitter data and analyze it.
 2.[Facebook Color Set](https://encycolorpedia.de/3b5998)
 3.[Cleaning Data](https://towardsdatascience.com/another-twitter-sentiment-analysis-bb5b01ebad90)
 4. [Udacity Facebook Secure and Private AI Scholarship Challenge Course](https://www.udacity.com/facebook-AI-scholarship)
-5. REFERENCE
+5. [Modified GRU - Federated Learning](https://github.com/andrelmfarias/Private-AI/blob/master/Federated_Learning/handcrafted_GRU.py)
+6. [Our query on Openmined slack about the federated learning issue](https://openmined.slack.com/archives/C6EEFN3A8/p1566138140348300)
