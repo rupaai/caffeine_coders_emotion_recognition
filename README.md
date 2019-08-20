@@ -40,7 +40,7 @@ WASSA-2017 Shared Task on Emotion Intensity. Saif M. Mohammad and Felipe Bravo-M
   
   2. **emotion_ecognition_with_federated_learning.ipynb**: In this notebook, we have tried to apply course content(Federated Learning) to our model. But with failed attempts only, since RNNs and LSTM/GRU are not supported by Syft yet.
   
-  3. **NLPproject_emotion_recognition.ipynb**: Our main notebook in which we have used the dataset for training and testing of model.
+  3. **NLPproject_emotion_recognition.ipynb**: Our main notebook in which we have used the dataset for training and testing of model. We are able to achieve an Accuracy of 91.85%. 
   
   4. **emotion_recognition.ipynb**: Trained our model on another dataset with 6 emotion labels, with two new emotions 'love' and 'surprise', this dataset was very unbalanced so we are not taking it for our main model's training.
   
