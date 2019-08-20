@@ -34,9 +34,12 @@ For our project, we used the training dataset to train our model and testing dat
 WASSA-2017 Shared Task on Emotion Intensity. Saif M. Mohammad and Felipe Bravo-Marquez. In Proceedings of the EMNLP 2017 Workshop on Computational Approaches to Subjectivity, Sentiment, and Social Media (WASSA), September 2017, Copenhagen, Denmark.BibTex
 
 ## Data Cleaning
-The data cleaning is necessary to improve the quality of the data to work with.
-The text will be cleaned from extra unnecessary characters like '@' or '#' which are often used in Twitter tweets.
-Also, links and unreadable not interpretable characters are removed. All words are put in lowercase.
+When we tweet or chat, we tend to be using various characters which are not part of English alphabets. However, in Natural Language Processing, it is really hard for the model to learn from data when it contains so many versatile characters and doesn't produce a good accuracy on that. So, to improve our accuracy we cleaned the data in the following process:
+1. We removed the unnecessary characters like '@' or '#' which are pretty common in Twitter tweets.
+2. We also removed links as those don't bear any meaning without the content.
+3. We also removed all the unreadable characters and converted all the texts into lowercase.
+
+For further clarity, we shared our Data Cleaning Code(https://github.com/rupaai/caffeine_coders_emotion_detection/blob/master/Training_Dataset_Cleaning.ipynb) here.
 
 ## Data Preprocessing
 In the preprocessing part the tweets are split into smaller pieces, or tokens. The process itself is called tokenization.
