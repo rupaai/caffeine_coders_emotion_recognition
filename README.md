@@ -33,6 +33,10 @@ For our project, we used the training dataset to train our model and testing dat
 #### Reference:
 WASSA-2017 Shared Task on Emotion Intensity. Saif M. Mohammad and Felipe Bravo-Marquez. In Proceedings of the EMNLP 2017 Workshop on Computational Approaches to Subjectivity, Sentiment, and Social Media (WASSA), September 2017, Copenhagen, Denmark.BibTex
 
+### Notebooks:
+
+  1. 
+
 ## Data Cleaning
 When we tweet or chat, we tend to be using various characters which are not part of English alphabets. However, in Natural Language Processing, it is really hard for the model to learn from data when it contains so many versatile characters and doesn't produce a good accuracy on that. So, to improve our accuracy we cleaned the data in the following process:
 1. We removed the unnecessary characters like '@' or '#' which are pretty common in Twitter tweets.
