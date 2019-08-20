@@ -44,9 +44,7 @@ WASSA-2017 Shared Task on Emotion Intensity. Saif M. Mohammad and Felipe Bravo-M
 
   4. **emotion_recognition.ipynb**: Trained our model on another dataset with 6 emotion labels, with two new emotions 'love' and 'surprise', this dataset was very unbalanced so we are not taking it for our main model's training.
   
-  5. **Training_Dataset_Cleaning.ipynb**: 
-  
-  6. **Testing_Dataset_Cleaning.ipynb**: 
+  5. **Training_Dataset_Cleaning.ipynb** and **Testing_Dataset_Cleaning.ipynb**: In these notebook the given datasets of the Tweet Emotion Intensity Dataset with the labelled emotions anger, fear, sadness and joy will be loaded as csv files from the original source. Afterwards they will be combined into one csv and then changed into a dataframe, where the tweets can be accessed and cleaned. The outputs are the cleaned datasets for training and testing data.
 
 ## Data Cleaning
 When we tweet or chat, we tend to be using various characters which are not part of English alphabets. However, in Natural Language Processing, it is really hard for the model to learn from data when it contains so many versatile characters and doesn't produce a good accuracy on that. So, to improve our accuracy we cleaned the data in the following process:
