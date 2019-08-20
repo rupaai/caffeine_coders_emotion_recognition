@@ -23,9 +23,9 @@ by Udacity and to the study group #sg_caffeine_coders project challenge. --->
 We used 
 [EmotionIntensity Dataset](http://saifmohammad.com/WebPages/EmotionIntensity-SharedTask.html) for our project where the data is collected from twitter.
 
-An interactive visualization of the Tweet Emotion Intensity Dataset is shown below whic is taken from [TweetEmotionIntensity-dataviz](http://saifmohammad.com/WebPages/TweetEmotionIntensity-dataviz.html):
+An interactive visualization of the Tweet Emotion Intensity Dataset is shown below which is taken from [TweetEmotionIntensity-dataviz](http://saifmohammad.com/WebPages/TweetEmotionIntensity-dataviz.html)
 
-![Alt_Text](https://github.com/rupaai/caffeine_coders_emotion_recognition/blob/master/Emotion_Intensity_Dashboard.png "TweetEmotionIntensity-dataviz"):
+![Alt_Text](https://github.com/rupaai/caffeine_coders_emotion_recognition/blob/master/Emotion_Intensity_Dashboard.png "TweetEmotionIntensity-dataviz")
 
 The dataset provides a trainings set, a development set, and a test set and on each set it contains the information of a user's tweet, its emotion and the intensity. Four different emotions were marked for the emotion data which are *Happy, fear, joy and, sadness*.
 
@@ -54,7 +54,7 @@ When we tweet or chat, we tend to be using various characters which are not part
 2. We also removed links as those don't bear any meaning without the content.
 3. We also removed all the unreadable characters and converted all the texts into lowercase.
 
-For further clarity, we shared our Data Cleaning Code(https://github.com/rupaai/caffeine_coders_emotion_detection/blob/master/Training_Dataset_Cleaning.ipynb) here.
+For further clarity, we shared our [Data Cleaning Code](https://github.com/rupaai/caffeine_coders_emotion_detection/blob/master/Training_Dataset_Cleaning.ipynb) here.
 
 ## Data Preprocessing
 
